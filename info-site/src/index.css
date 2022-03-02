@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: 'Inter', sans-serif;
+  background-color: #282d35;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.nav-site {
+  background-color: #21222a;
+}
+
+.nav__content {
+  display: flex;
+  align-items: center;
+  height: 9rem;
+  padding: 3rem 2.5rem;
+}
+
+.nav__logo-img {
+  height: 4.8rem;
+}
+
+.nav__logo-text,
+.nav__title {
+  margin: 0;
+}
+
+.nav__logo-text {
+  margin-right: auto;
+  color: #61daeb;
+  font-size: 2.4rem;
+}
+
+.nav__title {
+  color: #deebf8;
+  font-weight: 600;
+}
+
+.facts {
+  padding: 5.6rem 2.8rem;
+  color: white;
+  background-image: url(./images/react-icon-large.png);
+  background-repeat: no-repeat;
+  background-position: right 75%;
+}
+
+.facts__title {
+  margin: 0;
+  font-size: 4rem;
+  letter-spacing: -0.05em;
+}
+
+.facts__list {
+  margin-top: 3.6rem;
+}
+
+.facts__list > li {
+  padding-block: 1rem;
+  font-size: 2rem;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/::marker */
+.facts__list > li::marker {
+  font-size: 2.4rem;
+  color: #61daeb;
+}
