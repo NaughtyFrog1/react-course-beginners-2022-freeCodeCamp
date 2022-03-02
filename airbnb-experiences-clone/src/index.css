@@ -13,3 +13,14 @@ body {
   font-size: 1.6rem;
   font-family: 'Poppins', sans-serif;
 }
+
+.nav-site {
+  height: 7rem;
+  display: flex;
+  padding: 2rem 3.6rem;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+.nav-site__logo {
+  max-width: 100px;
+}
