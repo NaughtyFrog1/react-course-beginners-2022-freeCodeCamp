@@ -73,16 +73,27 @@ img {
 }
 
 /*
-  Card
+  Cards
 */
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  overflow-x: auto;
+}
 
 .card {
   width: 175px;
   font-size: 1.2rem;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .card__img {
   border-radius: 1rem;
+  margin-bottom: 1rem;
 }
 
 .card__stats {
@@ -90,6 +101,19 @@ img {
   align-items: center;
 }
 
+.card__stats > * {
+  margin-right: 3px;
+}
+
 .card__star {
   height: 14px;
+}
+
+.card__title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__price {
+  margin-top: auto;
 }

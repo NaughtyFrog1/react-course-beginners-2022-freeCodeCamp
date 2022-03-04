@@ -9,8 +9,11 @@ export default function App() {
     <>
       <Navbar />
       <Hero />
-
-      {data.map((cardData) => <Card {...cardData} />)}
+      <section className="cards-list container">
+        {data.map((cardData) => (
+          <Card {...cardData} key={cardData.id} />
+        ))}
+      </section>
     </>
   )
 }

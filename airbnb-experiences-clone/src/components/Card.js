@@ -17,8 +17,8 @@ export default function Card({
         <span className="text--muted">({reviewCount}) &bull;</span>
         <span className="text--muted">{location}</span>
       </div>
-      <p>{title}</p>
-      <p>
+      <p className="card__title">{title}</p>
+      <p className="card__price">
         <span className="fw--600">From ${price}</span> / person
       </p>
     </div>
