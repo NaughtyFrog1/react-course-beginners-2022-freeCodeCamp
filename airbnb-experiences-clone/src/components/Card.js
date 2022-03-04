@@ -7,9 +7,18 @@ export default function Card({
   coverImg,
   stats: { rating, reviewCount },
   location,
+  openSpots,
 }) {
+  let badgeText
+  if (openSpots === 0) {
+    badgeText = 'SOLD OUT'
+  } else if (location === 'Online') {
+    badgeText = 'ONLINE'
+  }
+
   return (
     <div className="card">
+      {badgeText && <div className="card__badge">{badgeText}</div>}
       <img className="card__img" src={'./images/' + coverImg} alt={title} />
       <div className="card__stats">
         <img className="card__star" src={star} alt="star" />
