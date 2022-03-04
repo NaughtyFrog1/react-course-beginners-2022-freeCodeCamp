@@ -39,12 +39,12 @@ body {
 .joke__setup {
   font-weight: 700;
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .joke__punchline {
   font-style: italic;
   font-size: 1.4rem;
-  margin-top: 1em;
 }
 
 .joke__hr {

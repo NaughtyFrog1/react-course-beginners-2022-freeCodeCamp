@@ -12,6 +12,7 @@ export default function App() {
         setup="How did the hacker escape the police?"
         punchline="He just ransomware!"
       />
+      <Joke punchline="It’s hard to explain puns to kleptomaniacs because they always take things literally." />
       <Joke
         setup="Why don't pirates travel on mountain roads?"
         punchline="Scurvy."
@@ -24,7 +25,6 @@ export default function App() {
         setup="What's the best thing about Switzerland?"
         punchline="I don't know, but the flag is a big plus!"
       />
-      <Joke setup="It’s hard to explain puns to kleptomaniacs because they always take things literally." />
     </main>
   )
 }
