@@ -12,7 +12,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: 'Poppins', sans-serif;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,7 +24,36 @@ body {
 
 .jokes-container {
   width: 420px;
-  padding: 2rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  padding: 4rem;
+  box-shadow: 0 0 24px -8px rgba(0, 0, 0, 0.15);
   border-radius: 1rem;
+  background-color: whitesmoke;
+}
+
+.joke__setup,
+.joke__punchline {
+  margin: 0;
+  letter-spacing: -0.04em;
+}
+
+.joke__setup {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.joke__punchline {
+  font-style: italic;
+  font-size: 1.4rem;
+  margin-top: 1em;
+}
+
+.joke__hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid #d1d1d1;
+  margin: 2.4rem -1.2rem;
+}
+
+.joke:last-of-type .joke__hr {
+  display: none;
 }
